@@ -1,0 +1,10 @@
+.footer {
+  left: 0 !important;
+  bottom: 0 !important;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  color: whitesmoke;
+  background: rgb(28, 17, 41, 1);
+  overflow:auto;
+}

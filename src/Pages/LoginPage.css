@@ -1,0 +1,15 @@
+.form {
+  margin-top: 10px;
+
+  margin-bottom: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 100vh;
+  border: 5px solid rgb(30, 10, 90);
+  border-radius: 20px;
+  padding: 10px !important;
+  font-size: 20px !important;
+}

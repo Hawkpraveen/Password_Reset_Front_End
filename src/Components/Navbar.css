@@ -1,0 +1,21 @@
+.navbar{
+    background: rgb(28, 17, 41, 1);
+}
+.navbar a{
+    text-decoration: none;
+    margin-right:25px !important;
+    font-size: x-large;
+    font-weight: 500;
+    color: rgb(200, 193, 193)!important;
+    
+}
+.navbar-collapse{   
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(200, 193, 193)!important;
+}
+.navbar-toggler-icon,.navbar-toggler{
+    color: azure !important;
+    background-color: azure;
+}
