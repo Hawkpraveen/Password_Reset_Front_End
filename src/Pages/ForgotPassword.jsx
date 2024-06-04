@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const ForgotPassword = () => {
   const [email, setEmail] = useState();
   const navigate = useNavigate();
@@ -12,11 +13,11 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/forgot-password",
+        `https://password-reset-back-end-4g0m.onrender.com/api/forgot-password`,
         { email }
       );
-    
-      response.then(navigate("/"),toast.success(response.data.message));
+
+      response.then(navigate("/"), toast.success(response.data.message));
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.message);
@@ -36,25 +37,27 @@ const ForgotPassword = () => {
         </legend>
         <form onSubmit={handleSubmit}>
           <div className="mb-3 text-center col-12 col-md-12 col-sm-12 d-flex justify-content-center mt-4 pt-2 fs-4">
-          <div className="col-12 col-md-10 col-sm-12 ">
-            <label htmlFor="email" className="form-label ">
-              <strong>Enter your registered Email address</strong>
-            </label>
-            <input
-              type="email"
-              className="form-control mt-2 fs-5"
-              id="email"
-              placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
+            <div className="col-12 col-md-10 col-sm-12 ">
+              <label htmlFor="email" className="form-label ">
+                <strong>Enter your registered Email address</strong>
+              </label>
+              <input
+                type="email"
+                className="form-control mt-2 fs-5"
+                id="email"
+                placeholder="Enter your email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
           </div>
           <div className="col-12 col-md-12 col-sm-12 d-flex justify-content-center mt-4 mb-3">
-          <button type="submit" className="btn btn-primary col-md-6 col-sm-6 col-8">
-            Send
-          </button>
+            <button
+              type="submit"
+              className="btn btn-primary col-md-6 col-sm-6 col-8"
+            >
+              Send
+            </button>
           </div>
-         
         </form>
       </div>
     </div>

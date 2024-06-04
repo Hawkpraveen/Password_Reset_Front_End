@@ -15,7 +15,7 @@ const LoginPage = ({ setToken }) => {
     e.preventDefault();
     const payload = { email, password };
     await axios
-      .post("http://localhost:5000/api/login-user", payload)
+      .post("https://password-reset-back-end-4g0m.onrender.com/api/login-user", payload)
       .then((res) => {
         toast.success(res.data.message);
         setToken(res.data.token);
