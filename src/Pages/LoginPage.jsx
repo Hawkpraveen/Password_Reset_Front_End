@@ -15,7 +15,10 @@ const LoginPage = ({ setToken }) => {
     e.preventDefault();
     const payload = { email, password };
     await axios
-      .post("https://password-reset-back-end-4g0m.onrender.com/api/login-user", payload)
+      .post(
+        "https://password-reset-back-end-4g0m.onrender.com/api/login-user",
+        payload
+      )
       .then((res) => {
         toast.success(res.data.message);
         setToken(res.data.token);
@@ -65,7 +68,7 @@ const LoginPage = ({ setToken }) => {
           {/* password field */}
           <div className="col-12 col-md-12 col-sm-12 d-flex justify-content-center mt-4">
             <div className="col-12 col-md-9 col-sm-12 ">
-              <label htmlFor="password" class="form-label">
+              <label htmlFor="password" className="form-label">
                 Password:
               </label>
               <input

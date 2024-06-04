@@ -12,7 +12,7 @@ const RegisterPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const payload = { username, email, password, role };  
+    const payload = { username, email, password};  
     await axios
       .post("https://password-reset-back-end-4g0m.onrender.com/api/register-user", payload)
       .then((res) => {
