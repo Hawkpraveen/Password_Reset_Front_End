@@ -17,7 +17,8 @@ const ResetPage = () => {
         `http://localhost:5000/api/reset-password/${id}/${token}`,
         { password, confirmPassword }
       );
-      response.then(navigate("/login-user"), toast.success(data.message));
+      toast.success(response.data.message);
+      response.then(navigate("/login-user"));
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.message);

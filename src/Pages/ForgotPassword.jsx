@@ -15,7 +15,7 @@ const ForgotPassword = () => {
         "http://localhost:5000/api/forgot-password",
         { email }
       );
-      toast.success(response.data.message);
+    //  toast.success(response.data.message);
       response.then(navigate("/"), toast.success(data.message));
     } catch (error) {
       console.log(error);
