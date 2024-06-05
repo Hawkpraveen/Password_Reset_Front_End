@@ -12,4 +12,4 @@
 
 ### The Reset page includes field of Password and Confirm Password to reset password.
 
-## Deployed the Work in Netilfy
+## Deployed the Work in Netilfy - https://forgot-password-node-js.netlify.app/
