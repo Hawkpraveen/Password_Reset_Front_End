@@ -16,7 +16,7 @@ const LoginPage = ({ setToken }) => {
     const payload = { email, password };
     await axios
       .post(
-        "https://password-reset-back-end-xxzi.onrender.com//api/login-user",
+        "https://password-reset-back-end-xxzi.onrender.com/api/login-user",
         payload
       )
       .then((res) => {

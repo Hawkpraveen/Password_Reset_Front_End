@@ -14,7 +14,7 @@ const RegisterPage = () => {
     e.preventDefault();
     const payload = { username, email, password};  
     await axios
-      .post("https://password-reset-back-end-xxzi.onrender.com//api/register-user", payload)
+      .post("https://password-reset-back-end-xxzi.onrender.com/api/register-user", payload)
       .then((res) => {
         toast.success(res.data.message);
         navigate("/login-user");
