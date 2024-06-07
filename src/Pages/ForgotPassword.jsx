@@ -13,7 +13,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `https://password-reset-back-end-4g0m.onrender.com/api/forgot-password`,
+        `https://password-reset-back-end-xxzi.onrender.com//api/forgot-password`,
         { email }
       );
 
