@@ -12,4 +12,18 @@
 
 ### The Reset page includes field of Password and Confirm Password to reset password.
 
+### 🔖Endpoints
+
+###  ➡️ Login User
+### URL - https://forgot-password-node-js.netlify.app/Login-user
+
+### ➡️ Register User
+### URL - https://forgot-password-node-js.netlify.app/register-user
+
+### ➡️ Forgot Password
+### URL - https://forgot-password-node-js.netlify.app/forgot-password
+
+### ➡️ Reset Password
+### URL - https://forgot-password-node-js.netlify.app/reset-password/:id/:token
+
 ## Deployed the Work in Netilfy - https://forgot-password-node-js.netlify.app/
