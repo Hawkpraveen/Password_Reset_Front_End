@@ -26,4 +26,4 @@
 ### ➡️ Reset Password
 ### URL - https://forgot-password-node-js.netlify.app/reset-password/:id/:token
 
-## Deployed the Work in Netilfy - https://forgot-password-node-js.netlify.app/
+## BASE URL - https://forgot-password-node-js.netlify.app/
